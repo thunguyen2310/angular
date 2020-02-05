@@ -1,0 +1,8 @@
+<input type="text" placeholder="Enter any key" [(ngModel)]="name">
+<button (click)="addMess(name)">Submit</button>
+<ol>
+  <li *ngFor="let i of data"> {{i}} 
+    <button (click)="deleteMess(name)"> remove </button>
+  </li>
+
+</ol>
