@@ -8,7 +8,7 @@ export class MessageService {
 
   constructor() { }
   getMessages() {
-    return this.messages;
+    return this.messages;k
   }
   addMess(item) {
     this.messages.push(item);
