@@ -10,7 +10,6 @@ export class AppComponent implements OnInit {
     public messageService: MessageService,
     private elemntRef: ElementRef
   ) { }
-  private title = 'aaa';
   data = [];
   name = '';
   prevName = '';
