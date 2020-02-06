@@ -1,8 +1,14 @@
-<input type="text" placeholder="Enter any key" [(ngModel)]="name">
-<button (click)="addMess(name)">Submit</button>
-<ol>
-  <li *ngFor="let i of data"> {{i}} 
-    <button (click)="deleteMess(name)"> remove </button>
-  </li>
+<div class="wrap">
 
-</ol>
+  <div class="form-group">
+    <h3>List App</h3>
+    <input id="textname" type="text" class="form-input" placeholder="Enter any key" [(ngModel)]="name">
+    <button (click)="addMess(name)" class="form-button">Submit</button>
+    <ol>
+      <li *ngFor="let i of data"> {{i}}
+        <button (click)="deleteMess(i)" class="form-button"> remove </button>
+        <button (click)="btnUpdate(i)" class="form-button">  update </button>
+      </li>
+    </ol>
+  </div>
+</div>

@@ -14,6 +14,11 @@ export class MessageService {
     this.messages.push(item);
   }
   deleteMess(item) {
-    this.messages.(item);
+    const index = this.messages.indexOf(item);
+    this.messages.splice(index, 1 );
+  }
+  updateMess(item1, item2) {
+    const index = this.messages.indexOf(item1);
+    this.messages[index] = item2;
   }
 }
