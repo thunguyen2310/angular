@@ -6,8 +6,8 @@
     <button (click)="addMess(name)" class="form-button">Submit</button>
     <ol>
       <li *ngFor="let i of data"> {{i}}
-        <button (click)="deleteMess(i)" class="form-button"> remove </button>
-        <button (click)="btnUpdate(i)" class="form-button">  update </button>
+        <button (click)="deleteMess(i)" class="form-button btn btn-primary"> remove </button>
+        <button (click)="btnUpdate(i)" class="form-button btn btn-primary"> update </button>
       </li>
     </ol>
   </div>
