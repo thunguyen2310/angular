@@ -7,6 +7,7 @@ export class MessageService {
   messages: any[] = [];
 
   constructor() { }
+
   getMessages() {
     return this.messages;
   }
@@ -15,7 +16,7 @@ export class MessageService {
   }
   deleteMess(item) {
     const index = this.messages.indexOf(item);
-    this.messages.splice(index, 1 );
+    this.messages.splice(index, 1);
   }
   updateMess(item1, item2) {
     const index = this.messages.indexOf(item1);
