@@ -1,1 +1,22 @@
-<p>movie works!</p>
+<div class="wrap">
+  <div class="form-group">
+    <h3>List App</h3>
+    <form [formGroup]="numberForm" (ngSubmit)="onSubmit()">
+      <input id="numberInput" type="text" class="form-input" placeholder="Enter any key" formControlName="numberInput">
+      <div *ngIf="numberForm.get('numberInput').touched && !numberForm.get('numberInput').valid"
+        class="alert alert-danger">
+        <span *ngIf="numberForm.get('numberInput').errors['required']">This field is required!</span>
+        <span *ngIf="numberForm.get('numberInput').errors['forbiddenName']">This field is not numeric!</span>
+      </div>
+
+      <button type="submit" class="form-button" [disabled]="!numberForm.valid">Submit</button>
+    </form>
+
+    <ol>
+      <li *ngFor="let i of data"> {{i}}
+        <button (click)="deleteMess(i)" class="form-button btn btn-primary"> remove </button>
+        <button (click)="btnUpdate(i)" class="form-button btn btn-primary"> update </button>
+      </li>
+    </ol>
+  </div>
+</div>
