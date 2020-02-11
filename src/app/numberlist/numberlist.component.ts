@@ -4,8 +4,8 @@ import { FormGroup, FormControl, Validators, ValidatorFn, AbstractControl } from
 import { MessageService } from '../message.service';
 @Component({
   selector: 'app-movie',
-  templateUrl: './movie.component.html',
-  styleUrls: ['./movie.component.scss']
+  templateUrl: './numberlist.component.html',
+  styleUrls: ['./numberlist.component.scss']
 })
 
 export class MovieComponent implements OnInit {
