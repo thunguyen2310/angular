@@ -5,85 +5,84 @@
   .container {
     color: white;
 
-    .row {
-      margin: 2em;
+    // .row {
+    //   margin: 1em;
+    .detail {
+      display: flex; // chia flex box detail 1 vaf deatail 2
+      width: 100%;
+      padding: 1em;
+      margin: auto;
+      font-size: 1.01em;
 
-      .detail {
-        display: flex; // chia flex box detail 1 vaf deatail 2
-        width: 100%;
+      .detail1 {
+        //width: 35%;
+        //padding-right: 2em;
+        //background: #ffff00;
 
-        .detail1 {
-          width: 35%;
-          padding-right: 2em;
-          //background: #ffff00;
-          ;
 
-          .picture {
-            position: relative; //image  text 
+        .picture {
+          position: relative; //image  text 
 
-            .bottom-left {
-              position: absolute;
-              bottom: 0.5em;
-              left: 1em;
-            }
-
-            .bottom-right {
-              position: absolute;
-              bottom: 0.5em;
-              right: 1em;
-            }
-
-            .image {
-              display: flex;
-              width: 100%;
-            }
+          .bottom-left {
+            position: absolute;
+            bottom: 0.5em;
+            left: 1em;
           }
 
+          .bottom-right {
+            position: absolute;
+            bottom: 0.5em;
+            right: 1em;
+          }
+
+          .img-fluid {
+            display: flex;
+          }
         }
 
-        .detail2 {
-          width: 65%;
+      }
+
+      .detail2 {
+        //width: 65%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        //padding-left: 2em;
+        //background: orange;
+        // margin-top: 5em;
+        font-size: 0.72em;
+
+        .text {
           display: flex;
-          flex-direction: column;
+          color: rgb(141, 142, 141);
+        }
+
+        .underline {
+          text-decoration: underline;
+          text-align: right;
+        }
+
+        .picture {
           position: relative;
-          padding-left: 2em;
-          //background: orangered;
-          // padding: 0.1em;
-          // padding-left: 6em;
-          // padding-top: 8em;
-          font-size: 0.72em;
+          font-size: 1.3em;
+          //padding-top: 0.1em;
 
-          .text {
-            display: flex;
-            color: rgb(141, 142, 141);
+          .bottom-left {
+            position: absolute;
+            bottom: 0.5em;
+            left: 2em;
           }
 
-          .underline {
-            text-decoration: underline;
-            text-align: right;
+          .bottom-right {
+            position: absolute;
+            bottom: 0.5em;
+            right: 2em;
           }
 
-          .picture {
-            position: relative; //
-            font-size: 1.3em;
-            //padding-top: 0.1em;
-
-            .bottom-left {
-              position: absolute;
-              bottom: 1em;
-              left: 1em;
-            }
-
-            .bottom-right {
-              position: absolute;
-              bottom: 1em;
-              right: 1em;
-            }
-
-          }
         }
       }
     }
-
   }
+
+  // }
 }
